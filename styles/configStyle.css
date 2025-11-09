@@ -1,0 +1,11 @@
+.text-size{
+    font-size: 2rem;
+}
+
+.site-icon {
+    width: 20%;
+    max-width: 280px;
+    height: auto;
+    object-fit: contain;
+    background: rgb(255, 255, 255,0.08);
+}
