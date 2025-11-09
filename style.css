@@ -1,0 +1,70 @@
+body {
+  margin: 0;
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+header {
+  background: #fff;
+  padding: 1em;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+}
+
+nav ul {
+  display: flex;
+  justify-content: center;
+  list-style: none;
+  gap: 2em;
+}
+
+nav a {
+  text-decoration: none;
+  color: #0077cc;
+  font-weight: bold;
+}
+
+.hero {
+  background: url('pruebas_html\\LandingPageGlobal\\icons\\Logo GTE.jpg') center/cover no-repeat;
+  height: 100vh;
+  position: relative;
+  color: white;
+  text-align: center;
+}
+
+.overlay {
+  background: rgba(0,0,0,0.5);
+  padding-top: 10%;
+  height: 100%;
+}
+
+.tagline {
+  font-size: 1.2em;
+  margin-bottom: 1em;
+}
+
+.orange {
+  color: #f57c00;
+}
+
+.blue {
+  color: #2196f3;
+}
+
+.cta-buttons {
+  margin-top: 2em;
+}
+
+.btn {
+  background: #fff;
+  color: #333;
+  padding: 0.8em 1.5em;
+  margin: 0.5em;
+  border-radius: 5px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.whatsapp {
+  background: #25D366;
+  color: white;
+}
