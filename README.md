@@ -1,1 +1,1 @@
-# LandingPageGlobal
+# Layout global
