@@ -1,4 +1,4 @@
-.text-size{
+.text-size {
     font-size: 2rem;
 }
 
@@ -7,5 +7,23 @@
     max-width: 280px;
     height: auto;
     object-fit: contain;
-    background: rgb(255, 255, 255,0.08);
+    background: rgb(255, 255, 255, 0.08);
+}
+
+.gradient-btn-conf {
+    background: linear-gradient(90deg, #003366, #ffa500);
+    color: white;
+    border: darkblue;
+}
+
+a,
+h1,
+h2,h3,h4 {
+    color: white !important;
+}
+
+.img-conf-size {
+    width: 20%;
+    display: block;
+    margin: 0 auto;
 }
