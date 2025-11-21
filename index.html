@@ -14,21 +14,18 @@
 </head>
 
 <body>
-  <nav class="navbar navbar-expand-lg gradient-btn-conf">
+  <nav class="navbar navbar-expand-lg gradient-btn-conf position-relative">
     <div class="container-fluid">
-      <a class="navbar-brand fw-medium text-size" href="#">GTE</a>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
-        aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <a class="navbar-brand fw-bold fs-3" href="#">GTE</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent">
         <span class="navbar-toggler-icon"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarSupportedContent">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link active" aria-current="page" href="#">Nosotros</a>
-          </li>
+          <li class="nav-item"><a class="nav-link active fs-5 fw-semibold" href="#">Nosotros</a></li>
           <li class="nav-item dropdown">
-            <a class="nav-link active dropdown-toggle" id="navbarDropdown" role="button" data-bs-toggle="dropdown"
-              href="#">Servicios</a>
+            <a class="nav-link active dropdown-toggle fs-5 fw-semibold" id="navbarDropdown"
+              data-bs-toggle="dropdown">Servicios</a>
             <ul class="dropdown-menu">
               <li><a href="#" class="dropdown-item">Carga Masiva</a></li>
               <li><a href="#" class="dropdown-item">Carga Semi Masiva</a></li>
@@ -38,20 +35,8 @@
               <li><a href="#" class="dropdown-item">Carga a Granel Solida</a></li>
             </ul>
           </li>
-          <li>
-            <a href=""></a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link activate">Contacto</a>
-          </li>
+          <li class="nav-item"><a class="nav-link activate fs-5 fw-semibold">Contacto</a></li>
         </ul>
-        <!--Search no lo veo tan conveniente-->
-        <!--
-          <form class="d-flex" role="search">
-            <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-            <button class="btn btn-outline-success" type="submit">Search</button>
-          </form>
-        -->
       </div>
     </div>
     <div class="d-flex justify-content-center">
@@ -59,23 +44,126 @@
     </div>
   </nav>
 
-
   <main class="flex-fill container mx-auto p-4">
     <section class="py-5 py-md-6">
       <div class="text-center mb-5">
-        <h2 class="display-6 fw-bold text dark" data-bs-theme="light">Nuestros Aliados</h2>
+        <h2 class="display-6 fw-bold text-dark" data-bs-theme="light">Nuestros Aliados</h2>
         <p class="mt-2 fs-5 text-secondary">Colaboraciones clave que fortalecen nuestros servicios.</p>
       </div>
 
-      <div class="position-relative w-100 overflow-hidden rounded-4 bg-white shadow-lg p-4" data-bs-theme="light">
-        <div class="d-flex justify-content-around align-items-center gap-4 px-4 flex-nowrap">
-          <img src="" alt="" class="img-fluid img-conf-aliados"
-            style="height: 80px; filter: grayscale(1); transition: all 0.3s;"
-            onmouseout="this.style.filter='grayscale(1)';">
+      <!-- Carrusel -->
+      <div id="aliadosCarousel" class="carousel slide rounded-4 bg-white shadow-lg p-4" data-bs-ride="carousel">
+        <div class="carousel-inner text-center">
+
+          <!-- Logo 1 -->
+          <div class="carousel-item active">
+            <img src="img/Logo Miratex.jpg" alt="Logo Aliado 1" class="img-fluid img-conf-aliados"
+              style="height: 80px; filter: grayscale(1); transition: all 0.3s;"
+              onmouseover="this.style.filter='grayscale(0)';" onmouseout="this.style.filter='grayscale(1)';">
+          </div>
+
+          <!-- Logo 2 -->
+          <div class="carousel-item">
+            <img src="img/Logo Hilanderia.jpg" alt="Logo Aliado 2" class="img-fluid img-conf-aliados"
+              style="height: 80px; filter: grayscale(1); transition: all 0.3s;"
+              onmouseover="this.style.filter='grayscale(0)';" onmouseout="this.style.filter='grayscale(1)';">
+          </div>
+
+          <!-- Logo 3 -->
+          <div class="carousel-item">
+            <img src="img/Logo Ajover.jpg" alt="Logo Aliado 3" class="img-fluid img-conf-aliados"
+              style="height: 80px; filter: grayscale(1); transition: all 0.3s;"
+              onmouseover="this.style.filter='grayscale(0)';" onmouseout="this.style.filter='grayscale(1)';">
+          </div>
         </div>
+
+        <!-- Controles -->
+        <button class="carousel-control-prev" type="button" data-bs-target="#aliadosCarousel" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon"></span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#aliadosCarousel" data-bs-slide="next">
+          <span class="carousel-control-next-icon"></span>
+        </button>
+      </div>
+    </section>
+
+    <!-- Descripción Institucional -->
+    <section class="container my-5 py-4">
+      <div class="row align-items-center text-center text-md-start g-4">
+
+
+        <div class="col-md-6 d-flex justify-content-center">
+          <img src="img/ChatGPT Image 21 nov 2025, 09_01_34.png" class="img-fluid rounded-4 shadow-lg"
+            alt="Transporte de carga" style="max-height: 320px; object-fit: cover;">
+        </div>
+
+
+        <div class="col-md-6">
+          <h2 class="fw-bold mb-3 text-center text-md-start">GLOBAL DE TRASLADOS ESPECIALIZADOS S.A.S</h2>
+          <h5 class="text-secondary mb-4 text-center text-md-start">Soluciones confiables en transporte terrestre de
+            carga en Colombia</h5>
+          <p class="lead text-justify">
+            En Global de Traslados Especializados S.A.S ofrecemos servicios integrales de logística y transporte
+            terrestre a nivel nacional, garantizando <strong>seguridad, cumplimiento y eficiencia</strong> en cada
+            operación.
+          </p>
+          <p class="lead text-justify">
+            Contamos con <strong>más de 17 años de experiencia</strong>, un equipo altamente capacitado y sistemas de
+            monitoreo <strong>24/7</strong>. Su carga siempre estará protegida, respaldada por <strong>MAPFRE
+              Seguros</strong> y control total durante todo el trayecto.
+          </p>
+        </div>
+
+
+      </div>
+    </section>
+
+
+    <section class="container py-5">
+      <h2 class="text-center mb-4">Nuestros Servicios</h2>
+      <div class="d-flex flex-wrap justify-content-center gap-4">
+        <!-- Servicio 1 -->
+        <div class="card text-center shadow-sm" style="width: 16rem;">
+          <div class="card-body">
+            <i class="fas fa-plane fa-2x mb-3 text-primary"></i>
+            <h5 class="card-title">Logistica</h5>
+            <p class="card-text">Ofrecemos soluciones logísticas integrales diseñadas para optimizar el flujo de sus
+              mercancías desde el origen hasta el destino final.</p>
+          </div>
+        </div>
+        <!-- Servicio 2 -->
+        <div class="card text-center shadow-sm" style="width: 16rem;">
+          <div class="card-body">
+            <i class="fas fa-ship fa-2x mb-3 text-primary"></i>
+            <h5 class="card-title">Transporte Terrestre</h5>
+            <p class="card-text">En Global de Traslados Especializados S.A.S prestamos servicios profesionales de
+              transporte terrestre a nivel nacional, garantizando puntualidad, seguridad y el manejo adecuado de todo
+              tipo de mercancías.</p>
+          </div>
+        </div>
+        <!-- Servicio 3 
+        <div class="card text-center shadow-sm" style="width: 16rem;">
+          <div class="card-body">
+            <i class="fas fa-truck fa-2x mb-3 text-primary"></i>
+            <h5 class="card-title">Ground Transport</h5>
+            <p class="card-text">Transporte terrestre y ferroviario para logística nacional e internacional.</p>
+          </div>
+        </div>
+        -->
+        <!-- Servicio 4 
+        <div class="card text-center shadow-sm" style="width: 16rem;">
+          <div class="card-body">
+            <i class="fas fa-shield-alt fa-2x mb-3 text-primary"></i>
+            <h5 class="card-title">Customs Brokerage</h5>
+            <p class="card-text">Despacho aduanero ágil para evitar demoras en tus envíos.</p>
+          </div>
+        </div>
+        -->
       </div>
     </section>
   </main>
+
+
 
 
   <footer class="py-4 bg-dark text-light">
